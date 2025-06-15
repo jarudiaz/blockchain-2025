@@ -1,0 +1,32 @@
+{
+  "name": "blockchain-2025",
+  "version": "1.0.0",
+  "description": "DeFi Lending Protocol for Blockchain Course",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage",
+    "deploy:local": "hardhat run scripts/deploy.js --network hardhat",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "node": "hardhat node"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.4",
+    "@nomiclabs/hardhat-ethers": "^2.2.1",
+    "chai": "^4.5.0",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.24.2",
+    "mocha": "^10.2.0",
+    "solidity-coverage": "^0.8.16"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.6",
+    "undici": "^7.10.0"
+  }
+}
